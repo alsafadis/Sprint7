@@ -2,6 +2,13 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+# Título y descripción de la app
+st.title("Visualización de Datos de Vehículos")
+st.write("""
+Esta aplicación permite explorar un conjunto de datos de vehículos usados.
+Puedes construir un histograma del odómetro o un gráfico de dispersión para ver la relación entre kilometraje y precio.
+""")
+
 # Leer los datos
 car_data = pd.read_csv('vehicles_us.csv')
 
